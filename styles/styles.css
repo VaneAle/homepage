@@ -1,0 +1,16 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+.image_block {
+    width: 175px;
+    height: 175px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.image_block img {
+    position: absolute;
+    bottom: -710px;
+    }
