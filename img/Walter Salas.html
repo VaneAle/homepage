@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)http://127.0.0.1:5500/#home -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Walter Salas</title>
+<link rel="stylesheet" href="./Walter Salas_files/styles.css"></head>
+<body>
+    <header id="header" class="">
+        <a href="http://127.0.0.1:5500/#" class="logo">WS</a>
+        <ul>
+            <li><a href="http://127.0.0.1:5500/#home">Home</a></li>
+            <li><a href="http://127.0.0.1:5500/#about">About</a></li>
+            <li><a href="http://127.0.0.1:5500/#skills">Skills</a></li>
+            <li><a href="http://127.0.0.1:5500/#portfolio">Portfolio</a></li>
+            <li><a href="http://127.0.0.1:5500/#testimonials">Testimonials</a></li>
+            <li><a href="http://127.0.0.1:5500/#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="banner" id="home">
+        <h2><span>Walter<br>Salas</span></h2>
+        <img src="./Walter Salas_files/Grupo 1bw.png" alt="Profile Pic">        
+
+    </section>
+
+    <section class="sec" id="about">
+        <div class="content">
+            <div class="mxw800p">
+                <h3>Who am i?</h3>
+                <p>Some about me.</p>
+                <!-- <a href="#" class="btn">Read more</a> -->
+            </div>
+        </div>
+    </section>
+
+    <section class="sec" id="skills">
+        <div class="content">
+            <div class="mxw800p">
+                <h3>Skills</h3>
+                <p>A lot of things!!</p>
+            </div>
+            <div class="skills">
+                <div class="box">
+                    <div class="iconBx">
+                        <img src="./Walter Salas_files/paint-brush-solid.svg" alt="Icon Skills">
+                    </div>
+                    <div class="content">
+                        <h2>Design</h2>
+                        <p>I design beatiful and simple things</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="iconBx">
+                        <img src="./Walter Salas_files/laptop-code-solid.svg" alt="Icon Skills">
+                    </div>
+                    <div class="content">
+                        <h2>Development</h2>
+                        <p>I make funcional things!</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="iconBx">
+                        <img src="./Walter Salas_files/magic-solid.svg" alt="Icon Skills">
+                    </div>
+                    <div class="content">
+                        <h2>Products</h2>
+                        <p>My skills merge and I can create amazing products!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec work" id="portfolio">
+        <div class="content">
+            <div class="mxw800p">
+                <h3>Some projects</h3>
+                <p>Some about me.</p>
+            </div>
+            <div class="workBx">
+                <div class="project">
+                    <a href="http://127.0.0.1:5500/#"><h2>Project 1</h2></a>
+                </div>
+                <div class="project">
+                    <a href="http://127.0.0.1:5500/#"><h2>Project 2</h2></a>
+                </div>
+                <div class="project">
+                    <a href="http://127.0.0.1:5500/#"><h2>Project 3</h2></a>
+                </div>
+                <div class="project">
+                    <a href="http://127.0.0.1:5500/#"><h2>Project 4</h2></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            let header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
