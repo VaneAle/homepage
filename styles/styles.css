@@ -24,6 +24,12 @@ header{
     transition: 0.6s;
 }
 
+header.sticky{
+    padding: 5px 100px;
+    background: #ffffff;
+    border-bottom: 1px solid (0,0,0,.1);
+}
+
 header .logo{
     position: relative;
     font-weight: 700;
@@ -58,6 +64,14 @@ header ul li a{
     transition: 0.6s;
 }
 
+header.sticky .logo{
+    color: black;
+}
+
+header.sticky ul li a{
+    color: black;
+}
+
 .banner{
     position: relative;
     width: 100%;
@@ -67,4 +81,16 @@ header ul li a{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.banner h2{
+    color: #ffffff;
+    font-size: 90px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1em;
+}
+
+.banner h2 span{
+    color: #4978ff;
 }
