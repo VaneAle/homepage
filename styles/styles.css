@@ -108,7 +108,7 @@ header.sticky ul li a{
 .sec{
     background: #ffffff;
     padding: 100px;
-    min-height: 100vh;
+    min-height: 50vh;
     display: flex;
     justify-content: center;
     justify-items: center;
