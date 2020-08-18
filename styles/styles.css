@@ -114,6 +114,7 @@ header.sticky ul li a{
     justify-items: center;
 }
 
+
 .sec .content{
     position: relative;
     text-align: center;
@@ -149,6 +150,7 @@ p{
 }
 
 .skills{
+    background-color: black;
     position: relative;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -157,12 +159,26 @@ p{
     margin-top: 40px;
 }
 
+.skills .content .mxw800p{
+    color: #ffffff;
+}
+
 .skills .box{
     width: 300px;
     margin: 0 auto;
     background: #ffffff;
     padding: 20px;
     box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+    transition: 0.5s;
+}
+
+.skills .box:hover{
+    width: 320px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px #c221f3, 0 0 40px #005194, 0 0 80px #d207ec;
+    transition: 0.5s;
 }
 
 .skills .box .iconBx{
